@@ -82,3 +82,45 @@ The automation reduces manual work by dynamically managing date ranges, handling
  │ - Export to Excel  │
  │ - Append/Save File │
  └────────────────────┘
+
+🚀 How to Run
+1. Clone the Repository
+git clone https://github.com/<your-username>/automated-gamelog-data-pipeline.git
+cd automated-gamelog-data-pipeline
+
+2. Install Dependencies
+pip install pandas mysql-connector-python openpyxl tqdm
+
+3. Run the Notebook
+
+Open in Jupyter Notebook or VSCode:
+
+jupyter notebook Smash_GMT-3_GameLogs_db_extraction_101725.ipynb
+
+4. Output
+
+Excel reports are automatically generated in the /Output folder, using dynamic filenames such as:
+
+smashgldbextract_2024-08-14(+8).xlsx
+
+🧾 Example Output
+| Date       | Game  | Player  | Bet | Win | Status    |
+| ---------- | ----- | ------- | --- | --- | --------- |
+| 2024-08-14 | Smash | user123 | 100 | 250 | Completed |
+
+🏁 Summary
+
+This project demonstrates a complete ETL data pipeline built using Python and MySQL.
+It showcases the ability to:
+
+Automate data extraction from a relational database
+
+Apply transformation and validation logic dynamically
+
+Load clean data into well-structured Excel reports
+
+The workflow is designed to be scalable, efficient, and transparent, ideal for analytics and reporting environments.
+
+Krist Ian
+Data Analyst | Automation Developer
+📧 [https://github.com/Metakrist]
